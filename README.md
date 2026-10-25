@@ -24,7 +24,7 @@ The app serves `web/` to a sandboxed frame. The pane gets only what `addon.conf`
 | `git:read`      | read git status, log and diffs there (needs `files:read`)   |
 | `network`       | reach the origins listed in `network = https://…` (or `*`)  |
 
-Each declared permission needs a `why.<permission> = …` line; users see it next to the request. A pane that declares `network` cannot read `.env` files.
+Each declared permission needs a `why.<permission> = …` line; users see it next to the request.
 
 Inside the frame there is no storage, no `eval`, no inline event handlers, no popups or navigation, and no scripts from the network. Code runs only from files in `web/`.
 
