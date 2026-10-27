@@ -2,6 +2,8 @@
 
 A small [agmsg](https://github.com/fujibee/agmsg) app add-on, and the starting point for writing your own. It adds a **Team activity** pane to the agmsg desktop app: a small dashboard of the current team's messages. It shows messages per member, activity by hour of day over the last 7 days, and the latest questions (messages ending with `?`) that the recipient has not answered yet.
 
+A question counts as answered when its recipient posted anything later. Recipients that are not team members (a broadcast to `all`) are skipped. The app hands a pane only the newest 500 messages, so on a busy team the 7-day chart covers less than 7 days; the pane says so under the chart.
+
 ## Try it
 
 1. In the agmsg app, open **Settings → Add-ons → Install from GitHub**.

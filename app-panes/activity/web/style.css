@@ -47,3 +47,5 @@ h2 { margin: 18px 0 6px; font-size: 12px; font-weight: 600; color: var(--muted);
 .meta { color: var(--muted); font-size: 12px; }
 .meta strong { color: var(--fg); }
 .first { overflow-wrap: anywhere; }
+.note { margin: 6px 0 0; color: var(--muted); font-size: 11px; }
+.note:empty { display: none; }
