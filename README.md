@@ -7,7 +7,7 @@ A small [agmsg](https://github.com/fujibee/agmsg) app add-on, and the starting p
 1. In the agmsg app, open **Settings → Add-ons → Install from GitHub**.
 2. Enter `fujibee/agmsg-addon-sample` and press **Install…**.
 3. Review the permission it asks for (read the team's messages) and confirm.
-4. Open **Team activity** from the **＋** at the top of the panes.
+4. Press the **+** at the top of the panes and choose **Add-on pane ▸ Team activity**. The first time, allow it to read the current team's messages.
 
 ## What an add-on is
 
