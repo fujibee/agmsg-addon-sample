@@ -1,10 +1,13 @@
 # agmsg add-on sample
 
-A small [agmsg](https://github.com/fujibee/agmsg) app add-on, and the starting point for writing your own. It adds a **Team timeline** pane to the agmsg desktop app: the team's messages, newest first, with a message count per member.
+A small [agmsg](https://github.com/fujibee/agmsg) app add-on, and the starting point for writing your own. It adds a **Team activity** pane to the agmsg desktop app: a small dashboard of the current team's messages. It shows messages per member, activity by hour of day over the last 7 days, and the latest questions (messages ending with `?`) that the recipient has not answered yet.
 
 ## Try it
 
-In the agmsg app, open **Settings → Add-ons**, enter `fujibee/agmsg-addon-sample` and press **Install…**. Review the permission it asks for (read the team's messages), then open it from **＋ New ▾ → Add-on pane ▸ Team timeline**.
+1. In the agmsg app, open **Settings → Add-ons → Install from GitHub**.
+2. Enter `fujibee/agmsg-addon-sample` and press **Install…**.
+3. Review the permission it asks for (read the team's messages) and confirm.
+4. Open **Team activity** from the **＋** at the top of the panes.
 
 ## What an add-on is
 
@@ -31,7 +34,7 @@ Inside the frame there is no storage, no `eval`, no inline event handlers, no po
 ## Make your own
 
 1. Use this repository as a template (or copy it).
-2. Rename `app-panes/timeline/` and edit `agmsg-plugin.conf` and `addon.conf`.
+2. Rename `app-panes/activity/` and edit `agmsg-plugin.conf` and `addon.conf`.
 3. Write the pane in `web/`. `kit/agmsg-addon.js` is the only file it needs to talk to the app:
 
    ```js

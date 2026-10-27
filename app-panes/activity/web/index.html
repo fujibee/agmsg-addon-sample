@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Team activity</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <header>
+    <h1 id="team">Team activity</h1>
+    <p id="status">Waiting for the app…</p>
+  </header>
+  <section aria-labelledby="h-members">
+    <h2 id="h-members">Messages per member</h2>
+    <div id="members" class="bars"></div>
+  </section>
+  <section aria-labelledby="h-hours">
+    <h2 id="h-hours">By hour of day, last 7 days</h2>
+    <div id="hours" class="hours"></div>
+    <div class="hours-axis"><span>0</span><span>6</span><span>12</span><span>18</span><span>24</span></div>
+  </section>
+  <section aria-labelledby="h-waiting">
+    <h2 id="h-waiting">Waiting for a reply</h2>
+    <ul id="waiting" class="waiting"></ul>
+  </section>
+</body>
+</html>
